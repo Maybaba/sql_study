@@ -2,6 +2,7 @@
 SELECT
     UPPER(first_name)
      FROM employees
+     
     ;
 
 -- 2. employees 테이블에서 모든 사원의 last_name을 소문자로 변환하여 출력하세요.
