@@ -1,0 +1,147 @@
+2과목 PART 2  44번
+
+A.고객번호  A.고객명  A.단말기ID  B.단말기ID  B.단말기명  B.OSID
+
+   11000        홍길동      1000          1000          A1000        100
+   12000        강감찬      null             null              null           null
+   13000        이순신      null             null              null           null
+   14000        안중근      3000           null              null           null
+   15000        고길동      4000           null              null           null
+   16000        이대로      4000           null              null           null
+   
+
+
+
+   A.고객번호  A.고객명  A.단말기ID  B.단말기ID  B.단말기명  B.OSID
+
+   11000        홍길동      1000          1000          A1000        100
+   null             null           null           2000         B2000        100
+   null             null           null           3000         C3000        200
+   null             null           null           4000         D4000        300
+
+
+
+
+   A.고객번호  A.고객명  A.단말기ID  B.단말기ID  B.단말기명  B.OSID
+
+   11000        홍길동      1000          1000          A1000        100
+   12000        강감찬      null             null              null           null
+   13000        이순신      null             null              null           null
+   14000        안중근      3000           null              null           null
+   15000        고길동      4000           null              null           null
+   16000        이대로      4000           null              null           null
+   null             null           null           2000         B2000        100
+   null             null           null           3000         C3000        200
+   null             null           null           4000         D4000        300
+
+
+CROSS 2과목 PART 2 46번
+[ A  B  C  C  D  E ]
+1 B W W 1 10
+1 B W Z 4 11
+1 Y Y V 2 22
+3 D W W 1 10
+3 D W Z 4 11
+3 D W V 2 22
+5 Y Y W 1 10
+5 Y Y Z  4 11
+5 Y Y V 2 22
+
+FULL 5
+
+
+
+RIGHT 4
+
+
+
+같은 48번  ㅋㅋㅋ 적으니까 쉽당!!
+[ inner ]
+
+ C1  C2  C1  C2
+  A   1   B   2
+  A   1   C   3
+  A   1   D   4
+  B   2    B   3
+  B   2    C   3
+  . . .
+ [ RIGHT ]
+
+   A.c1   A.c2   B.c1   B.c2
+
+    B        2         B         2
+    C         3       C         3
+   null     null      D          4
+
+
+ [ FULL ]
+
+   A.c1   A.c2   B.c1   B.c2
+  
+    A        1        null     null
+    B        2         B         2
+    C         3       C         3
+    D        4        null     null
+    E         5        null     null
+   null     null      D          4
+
+
+ 
+  # 조인 기능 가지고 어떤 정리에 활용할 수 있을까
+(+) 가 붙으면 on,아니면  where
+(+)가 붙은 위치에 따라 inner, outer join
+
+
+2과목 part 3 66번 -> 강의 듣고 다시 풀기
+
+A 일자 >= B 일자 -> group by로 묶어서 SELF JOIN 한다.
+
+
+A 일자 매출 B일자 B매출 
+1101 1000 1101 1000
+1101 1000 1102 2000
+1101 1000 1103 3000
+1101 1000 1104 4000
+1101 1000 1105 5000
+1101 1000 1106 6000
+1101 1000 1107 7000
+1101 1000 1108 8000
+1101 1000 1109 9000
+1101 1000 1110 10000
+
+1102 1000
+1102 1000
+1102 1000
+1102 1000
+1102 1000
+1102 1000
+1102 1000
+1102 1000
+1102 1000
+1102 1000
+
+...
+
+1103 1000
+1104 1000
+1105 1000
+1106 1000
+1107 1000
+1108 1000
+1109 1000
+1110 1000
+
+...
+
+보기 4번 (오답)
+1101 10000
+1102 9000
+1103 8000
+
+...
+
+이해가 안되는디?? 다시 풀어보면서 물어보기
+
+
+
+
